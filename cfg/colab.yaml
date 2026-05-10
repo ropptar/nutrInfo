@@ -1,0 +1,26 @@
+data:
+  raw_dir: "/content/drive/MyDrive/nutrInfo_cache"
+  processed_dir: "/content/drive/MyDrive/nutrInfo_cache/processed"
+
+dataset:
+  foodseg103:
+    dir: "foodseg103"
+    batch_size: 8 
+  nutrition_db:
+    path: "ingredients.csv"
+  nutrition5k:
+    dir: "/content/data/nutrition5k"
+    downloads:
+      - source: "gs://nutrition5k_dataset/nutrition5k_dataset/metadata"
+        dest: "metadata"
+      - source: "gs://nutrition5k_dataset/nutrition5k_dataset/realsense_overhead"
+        dest: "realsense_overhead"
+model:
+  freeze_backbone: false
+
+training:
+  epochs: 50
+  mixed_precision: true
+
+callbacks:
+  checkpoint_dir: "checkpoints"

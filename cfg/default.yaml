@@ -1,0 +1,48 @@
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+
+dataset:
+  foodseg103:
+    dir: "foodseg103" 
+    image_size: [512,512]
+    batch_size: 4
+    num_classes: 104
+    train_split: "ImageSets/train.txt"
+    test_split: "ImageSets/test.txt"
+  nutrition_db:
+    path: "data/nutrition_db/ingredients.csv" 
+  nutrition5k:
+    dir: "nutrition5k"
+    #downloads:
+    #  - source: "gs://nutrition5k_dataset/nutrition5k_dataset/metadata"
+    #    dest: "metadata"
+model:
+  backbone: "efficientnetv2-s"
+  pretrained: "imagenet"
+  freeze_backbone: true
+  freeze_backbone_epochs: 15
+
+training:
+  epochs: 2
+  learning_rate: 0.0001
+  optimizer: "adamw"
+  mixed_precision: false
+
+callbacks:
+  checkpoint_dir: "checkpoints"
+  save_best_only: true
+  early_stopping_patience: 10
+  save_freq: 10
+
+  reduce_lr_on_plateau: true
+  reduce_lr_factor: 0.5
+  reduce_lr_patience: 5
+  reduce_lr_min: 0.0000001
+
+augmentation:
+  random_brightness: 0.2
+  random_contrast: 0.2
+  blur_limit: 5
+  rotate_limit: 20
+  coarse_dropout_max_holes: 4
