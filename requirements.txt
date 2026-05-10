@@ -1,0 +1,6 @@
+pillow
+matplotlib
+numpy
+pandas
+keras
+albumentations
