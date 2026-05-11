@@ -1,101 +1,101 @@
-,Name,Calories,Fat,Protein,Carbs,Fiber,Sodium
-0,candy,473,20.2,8.72,67.4,1.9,174
-1,egg tart,104,2.88,14.7,4.89,0.0,160
-2,french fries,242,10.3,3.24,34.0,3.6,77.0
-3,chocolate,2020.0,22.4,6.08,64.5,2.7,503
-4,biscuit,307,13.2,5.88,41.2,1.2,1060.0
-5,popcorn,2440.0,43.6,7.29,45.1,8.1,909
-6,pudding,441,1.7,2.76,19.7,0.0,296
-7,ice cream,330,11.3,4.34,53.4,1.4,780
-8,cheese butter,374,17.1,7.12,47.8,0.7,510
-9,cake,390,17.4,7.06,51.3,1.7,390
-10,wine,50.0,0.0,0.5,6.3,0.0,626
-11,coffee,509,29.1,1.96,59.9,0.5,0.0
-12,juice,22.0,0.1,0.6,4.59,0.8,58.0
-13,milk,466,24.9,5.8,63.8,3.4,200
-14,tea,3.0,0.0,0.0,0.2,,132
-15,almond,495,25.5,7.7,62.0,4.8,256
-16,red beans,183,0.63,0.81,8.68,,15.0
-17,cashew,609,53.0,12.1,30.3,3.0,295
-18,dried cranberries,502,26.1,4.56,64.8,3.2,450
-19,soy,46.0,2.0,1.6,5.3,0.0,55.0
-20,walnut,619,59.3,24.1,9.58,6.8,2.0
-21,peanut,473,20.2,8.72,67.4,1.9,174
-22,egg,104,2.88,14.7,4.89,0.0,160
-23,apple,290,11.5,2.17,44.5,1.6,200
-24,date,277,0.15,1.81,75.0,6.7,1.0
-25,apricot,347,0.11,0.64,21.3,2.7,4.0
-26,avocado,160,14.7,2.0,8.53,6.7,7.0
-27,banana,441,1.7,2.76,19.7,0.0,296
-28,strawberry,1460.0,2.32,2.56,79.2,0.0,287
-29,cherry,338,1.7,2.97,79.4,0.1,261
-30,blueberry,61.0,0.76,1.22,12.3,2.6,6.0
-31,raspberry,52.0,0.65,1.2,11.9,6.5,1.0
-32,mango,212,0.06,0.11,13.1,0.3,5.0
-33,olives,884,100,0.0,0.0,0.0,0.0
-34,peach,77.0,0.18,0.9,17.6,0.4,14.0
-35,lemon,1050.0,13.6,11.9,20.6,1.0,252
-36,pear,43.0,0.0,0.0,11.9,0.1,8.0
-37,fig,348,7.3,3.7,70.9,4.6,350
-38,pineapple,86.0,0.1,0.41,22.4,1.3,2.0
-39,grape,183,0.1,0.5,10.5,0.2,8.0
-40,kiwi,121,0.0,0.0,7.41,,21.0
-41,melon,21.0,0.2,0.84,4.06,0.3,11.0
-42,orange,602,2.0,1.1,30.4,1.3,46.0
-43,watermelon,127,0.15,0.61,7.55,0.4,1.0
-44,steak,97.0,1.3,21.4,0.0,,43.0
-45,pork,377,3.7,6.1,79.8,,2180.0
-46,chicken duck,84.0,0.4,20.2,0.0,,
-47,sausage,230,19.3,11.5,2.6,0.0,1110.0
-48,fried meat,242,10.3,3.24,34.0,3.6,77.0
-49,lamb,51.0,1.7,2.1,7.1,1.1,13.0
-50,sauce,507,3.59,5.79,16.4,1.6,230
-51,crab,347,0.74,17.9,0.0,0.0,563
-52,fish,627,5.9,23.2,0.0,,
-53,shellfish,111,0.84,20.5,5.41,0.0,667
-54,shrimp,287,16.8,12.6,21.4,0.3,1050.0
-55,soup,72.0,2.2,7.4,5.6,,30.0
-56,bread,374,17.1,7.12,47.8,0.7,510
-57,corn,1980.0,23.4,6.15,64.4,5.8,657
-58,hamburg,1140.0,4.15,8.07,50.8,2.6,488
-59,pizza,469,18.9,9.67,65.1,3.5,815
-60,wonton dumplings,101,3.78,8.71,8.03,,46.0
-61,pasta,204,10.6,16.2,10.9,0.9,536
-62,noodles,43.0,1.68,1.34,5.74,1.2,344
-63,rice,392,3.8,7.6,81.5,5.4,227
-64,pie,2100.0,24.8,5.1,64.3,1.9,471
-65,tofu,1350.0,31.8,5.95,3.06,1.1,773
-66,eggplant,104,0.18,0.98,5.88,3.0,2.0
-67,potato,502,26.1,4.56,64.8,3.2,450
-68,garlic,69.0,0.1,1.5,17.6,5.3,20.0
-69,cauliflower,96.0,0.45,1.84,4.11,2.3,242
-70,tomato,1360.0,35.0,1.8,2.0,0.2,905
-71,kelp,43.0,0.56,1.68,9.57,1.3,233
-72,seaweed,1080.0,1.39,15.3,46.2,36.7,4330.0
-73,spring onion,547,37.0,6.6,51.3,1.2,541
-74,ginger,80.0,0.75,1.82,17.8,2.0,13.0
-75,okra,33.0,0.19,1.93,7.45,3.2,7.0
-76,lettuce,959,11.0,13.2,19.3,1.8,646
-77,pumpkin,88.0,0.22,2.72,3.39,2.7,8.0
-78,cucumber,233,0.4,13.0,0.0,,
-79,white radish,994,2.15,10.7,43.9,9.2,478
-80,carrot,25.0,0.19,0.64,5.54,1.5,42.0
-81,asparagus,85.0,0.12,2.2,3.88,2.1,2.0
-82,bamboo shoots,11.0,0.09,0.92,2.32,,1.0
-83,broccoli,146,0.41,2.38,7.18,3.3,262
-84,celery stick,1360.0,17.9,13.6,27.2,1.6,1010.0
-85,cilantro mint,1810.0,11.9,1.67,79.5,2.4,1.0
-86,snow peas,153,0.2,1.4,7.31,3.1,26.0
-87,cabbage,23.0,0.06,1.27,5.51,1.9,255
-88,bean sprouts,229,9.01,5.59,31.5,5.8,305
-89,onion,547,37.0,6.6,51.3,1.2,541
-90,pepper,18.0,0.3,0.8,3.9,1.2,1370.0
-91,green beans,229,9.01,5.59,31.5,5.8,305
-92,French beans,762,8.92,2.16,35.6,5.7,146
-93,king oyster mushroom,627,5.9,23.2,0.0,,
-94,shiitake,162,0.35,3.45,7.68,3.6,5.0
-95,enoki mushroom,32.0,0.53,1.49,6.86,3.8,9.0
-96,oyster mushroom,32.0,0.53,1.49,6.86,3.8,9.0
-97,white button mushroom,994,2.15,10.7,43.9,9.2,478
-98,salad,360,2.7,2.1,13.2,0.0,939
-99,other ingredients,227,0.16,0.25,91.0,2.2,14.0
+,Name,Description,Calories,Fat,Protein,Carbs,Fiber,Sodium
+0,candy,"Candies, CARAMELLO Candy Bar",1930.0,21.2,6.19,63.8,1.2,122
+1,egg tart,"Cherry juice, tart",248,0.54,0.31,13.7,,4.0
+2,french fries,"APPLEBEE'S, french fries",1210.0,13.2,3.31,39.5,3.9,618
+3,chocolate,"Candies, milk chocolate",2240.0,29.7,7.65,59.4,3.4,79.0
+4,biscuit,"KFC, biscuit",1500.0,17.0,7.5,43.6,2.0,1070.0
+5,popcorn,"Snacks, popcorn, air-popped",1620.0,4.54,12.9,77.8,14.5,8.0
+6,pudding,"Corn pudding, home prepared",548,5.04,4.42,17.0,1.2,282
+7,ice cream,Ice cream sandwich,990,8.57,4.29,37.1,0.0,129
+8,cheese butter,"Crackers, cheese, sandwich-type with peanut butter filling",496,25.1,12.4,56.7,3.4,829
+9,cake,"Cake, snack cakes, creme-filled, sponge",1560.0,11.5,3.47,64.0,1.0,470
+10,wine,"Alcoholic beverage, wine, table, red",85.0,0.0,0.07,2.61,0.0,4.0
+11,coffee,"SILK Coffee, soymilk",259,1.44,2.06,10.3,0.0,41.0
+12,juice,"Orange peel, raw",97.0,0.2,1.5,25.0,10.6,3.0
+13,milk,"Crackers, milk",446,13.8,7.6,71.7,3.4,687
+14,tea,"Beverages, tea, hibiscus, brewed",0.0,0.0,0.0,0.0,0.0,4.0
+15,almond,"Nuts, almonds",579,49.9,21.2,21.6,12.5,1.0
+16,red beans,"Beans, kidney, red, mature seeds, raw",1410.0,1.06,22.5,61.3,15.2,12.0
+17,cashew,"Nuts, cashew nuts, raw",553,43.8,18.2,30.2,3.3,12.0
+18,dried cranberries,"Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program)",1290.0,1.09,0.17,82.8,5.3,5.0
+19,soy,Soy sauce made from soy (tamari),251,0.1,10.5,5.57,0.8,5590.0
+20,walnut,"Oil, walnut",3700.0,100,0.0,0.0,0.0,0.0
+21,peanut,"Peanuts, all types, raw",567,49.2,25.8,16.1,8.5,18.0
+22,egg,"Egg, whole, raw, fresh",599,9.51,12.6,0.72,0.0,142
+23,apple,"Apples, raw, without skin",48.0,0.13,0.27,12.8,1.3,0.0
+24,date,"Dates, medjool",277,0.15,1.81,75.0,6.7,1.0
+25,apricot,"Apricots, raw",201,0.39,1.4,11.1,2.0,1.0
+26,avocado,"Oil, avocado",884,100,0.0,0.0,0.0,0.0
+27,banana,"Bananas, raw",89.0,0.33,1.09,22.8,2.6,1.0
+28,strawberry,"Strawberries, raw",136,0.3,0.67,7.68,2.0,1.0
+29,cherry,"Cherries, sweet, raw",63.0,0.2,1.06,16.0,2.1,0.0
+30,blueberry,"Blueberries, raw",57.0,0.33,0.74,14.5,2.4,1.0
+31,raspberry,"Raspberries, raw",52.0,0.65,1.2,11.9,6.5,1.0
+32,mango,"Mangos, raw",250,0.38,0.82,15.0,1.6,1.0
+33,olives,"Olives, ripe, canned (jumbo-super colossal)",81.0,6.87,0.97,5.61,2.5,735
+34,peach,"Peaches, yellow, raw",165,0.25,0.91,9.54,1.5,0.0
+35,lemon,"Lemon juice from concentrate, bottled, REAL LEMON",73.0,0.07,0.47,5.66,0.7,26.0
+36,pear,"Pears, raw",239,0.14,0.36,15.2,3.1,1.0
+37,fig,"Figs, raw",310,0.3,0.75,19.2,2.9,1.0
+38,pineapple,"Toppings, pineapple",253,0.1,0.1,66.4,0.4,42.0
+39,grape,"Grape leaves, canned",287,1.97,4.27,11.7,9.9,2850.0
+40,kiwi,"Kiwifruit, green, raw",255,0.52,1.14,14.7,3.0,3.0
+41,melon,"Melons, cantaloupe, raw",141,0.19,0.84,8.16,0.9,16.0
+42,orange,"Oranges, raw, all commercial varieties",197,0.12,0.94,11.8,2.4,0.0
+43,watermelon,"Watermelon, raw",127,0.15,0.61,7.55,0.4,1.0
+44,steak,"DENNY'S, top sirloin steak",762,7.34,28.9,0.14,,349
+45,pork,"Pork, pickled pork hocks",171,10.5,19.1,0.0,0.0,1050.0
+46,chicken duck,"Duck, domesticated, liver, raw",136,4.64,18.7,3.53,0.0,140
+47,sausage,"Sausage, smoked link sausage, pork",309,28.2,12.0,0.94,0.0,827
+48,fried meat,"Pork, fresh, ground, cooked",297,20.8,25.7,0.0,0.0,73.0
+49,lamb,"Lamb, New Zealand, imported, ground lamb, raw",807,12.4,20.3,0.0,0.0,57.0
+50,sauce,"Sauce, cheese sauce mix, dry",438,18.3,7.68,60.5,1.0,3200.0
+51,crab,"Crustaceans, crab, blue, crab cakes, home recipe",155,7.52,20.2,0.48,0.0,330
+52,fish,"Fish, fish sticks, frozen, prepared",1160.0,16.2,11.0,21.7,1.5,402
+53,shellfish,"Crustaceans, crab, alaska king, cooked, moist heat",97.0,1.54,19.4,0.0,0.0,1070.0
+54,shrimp,"Crustaceans, shrimp, cooked",99.0,0.28,24.0,0.2,,111
+55,soup,"Soup, HEALTHY CHOICE Chicken and Rice Soup, canned",37.0,0.55,2.53,5.71,0.8,181
+56,bread,"Bread, cheese",408,20.8,10.4,44.8,2.1,750
+57,corn,"Corn grain, white",365,4.74,9.42,74.3,,35.0
+58,hamburg,"McDONALD'S, Hamburger",1100.0,10.1,12.9,30.3,1.3,494
+59,pizza,"PIZZA HUT 12"" Cheese Pizza, Pan Crust",1170.0,12.6,11.7,29.9,1.7,624
+60,wonton dumplings,"Soup, wonton, Chinese restaurant",32.0,0.26,2.08,5.25,0.2,406
+61,pasta,"Pasta, dry, enriched",371,1.51,13.0,74.7,3.2,6.0
+62,noodles,"Rice noodles, cooked",454,0.2,1.79,24.0,1.0,19.0
+63,rice,Rice crackers,416,5.0,10.0,82.6,0.0,233
+64,pie,"Pie, peach",224,10.0,1.9,32.9,0.8,217
+65,tofu,Tofu yogurt,394,1.8,3.5,16.0,0.2,35.0
+66,eggplant,"Eggplant, pickled",205,0.7,0.9,9.77,2.5,1670.0
+67,potato,"Bread, potato",266,3.13,12.5,47.1,6.3,375
+68,garlic,"Garlic, raw",623,0.5,6.36,33.1,2.1,17.0
+69,cauliflower,"Cauliflower, raw",25.0,0.28,1.92,4.97,2.0,30.0
+70,tomato,Tomato powder,302,0.44,12.9,74.7,16.5,134
+71,kelp,"Seaweed, kelp, raw",43.0,0.56,1.68,9.57,1.3,233
+72,seaweed,"Seaweed, agar, dried",306,0.3,6.21,80.9,7.7,102
+73,spring onion,"Onions, spring or scallions (includes tops and bulb), raw",32.0,0.19,1.83,7.34,2.6,16.0
+74,ginger,"Ginger root, raw",80.0,0.75,1.82,17.8,2.0,13.0
+75,okra,"Okra, raw",33.0,0.19,1.93,7.45,3.2,7.0
+76,lettuce,"Lettuce, cos or romaine, raw",72.0,0.3,1.23,3.29,2.1,8.0
+77,pumpkin,"Pumpkin, raw",26.0,0.1,1.0,6.5,0.5,1.0
+78,cucumber,"Cucumber, peeled, raw",10.0,0.16,0.59,2.16,0.7,2.0
+79,white radish,"Radishes, white icicle, raw",14.0,0.1,1.1,2.63,1.4,16.0
+80,carrot,"Carrot, dehydrated",341,1.49,8.1,79.6,23.6,275
+81,asparagus,"Asparagus, raw",85.0,0.12,2.2,3.88,2.1,2.0
+82,bamboo shoots,"Bamboo shoots, raw",115,0.3,2.6,5.2,2.2,4.0
+83,broccoli,"Broccoli, raw",34.0,0.37,2.82,6.64,2.6,33.0
+84,celery stick,"Celery, raw",14.0,0.17,0.69,2.97,1.6,80.0
+85,cilantro mint,"Coriander (cilantro) leaves, raw",23.0,0.52,2.13,3.67,2.8,46.0
+86,snow peas,"Peas, green, raw",81.0,0.4,5.42,14.4,5.7,5.0
+87,cabbage,"Cabbage, kimchi",65.0,0.5,1.1,2.4,1.6,498
+88,bean sprouts,"Beans, kidney, mature seeds, sprouted, raw",29.0,0.5,4.2,4.1,,6.0
+89,onion,"Onions, raw",166,0.1,1.1,9.34,1.7,4.0
+90,pepper,"Pepper, banana, raw",113,0.45,1.66,5.35,3.4,13.0
+91,green beans,"Beans, snap, green, microwaved",33.0,0.5,2.31,6.41,3.4,3.0
+92,French beans,"Beans, french, mature seeds, raw",343,2.02,18.8,64.1,25.2,18.0
+93,king oyster mushroom,"Mushrooms, oyster, raw",139,0.41,3.31,6.09,2.3,18.0
+94,shiitake,"Mushrooms, shiitake, dried",296,0.99,9.58,75.4,11.5,13.0
+95,enoki mushroom,"Mushrooms, enoki, raw",153,0.29,2.66,7.81,2.7,3.0
+96,oyster mushroom,"Mushrooms, oyster, raw",139,0.41,3.31,6.09,2.3,18.0
+97,white button mushroom,"Mushrooms, white, microwaved",147,0.46,3.91,6.04,2.5,17.0
+98,salad,"Lettuce, green leaf, raw",62.0,0.15,1.36,2.87,1.3,28.0
+99,other ingredients,"Frozen yogurts, flavors other than chocolate",531,3.6,3.0,21.6,0.0,63.0
