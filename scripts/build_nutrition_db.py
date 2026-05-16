@@ -4,6 +4,7 @@ import pandas as pd
 from os import environ
 from time import sleep
 import urllib3
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -12,24 +13,45 @@ datasetPath = ROOT_DIR / "data/raw/foodseg103/"
 params = {
     "query": "",
     "dataType": "SR Legacy",
-    "api_key": environ.get('USDA_API_KEY'),
+    "format": "abridged",
+    "nutrients": "208,204,203,205,291,307",
+    "api_key": environ.get("USDA_API_KEY"),
 }
 
 headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 
 proxies = {"http": "socks5://127.0.0.1:10808", "https": "socks5://127.0.0.1:10808"}
 
-nutrition = pd.DataFrame(
-    columns=["Name", "Description", "Calories", "Fat", "Protein", "Carbs", "Fiber", "Sodium"]
-)
+nutrition = []
 
-fix_queries = {
-    # Previously fixed — still needed
+fdc_overrides = {
+    "egg tart": "175069",
+    "french fries": "170452",
+    "ice cream": "167575",
+    "cheese butter": "173418",
+    "cake": "174951",
+    "coffee": "171890",
+    "juice": "169100",
+    "milk": "171266",
+    "walnut": "170187",
+    "grape": "174683",
+    "pork": "168287",
+    "rice": "169712",
+    "pie": "175012",
+    "tofu": "172475",
+    "eggplant": "169352",
+    "avocado": "171705",
+    "potato": "170438",
+    "tomato": "170457",
+    "carrot": "170393",
+    "green beans": "169961",
+    "soup": "172736",
+}
+
+query_overrides = {
     "chocolate": "milk chocolate",
     "popcorn": "air popped popcorn",
     "fried meat": "pork fresh ground cooked",
-
-    # New fixes
     "wine": "alcoholic beverage wine table red",
     "juice": "orange juice raw",
     "peanut": "peanuts raw all types",
@@ -38,13 +60,16 @@ fix_queries = {
     "olives": "olives ripe canned",
     "peach": "peaches raw",
     "orange": "oranges raw all commercial varieties",
-    "steak": "beef top sirloin steak raw",
+    "steak": "generic raw beef steak",
     "banana": "bananas raw",
+    "sauce": "tomato chili sauce",
     "kiwi": "kiwifruit green raw",
     "melon": "melon cantaloupe raw",
     "salad": "lettuce green leaf raw",
 }
 
+url = "https://api.nal.usda.gov/fdc/v1/"
+endpoint = ""
 # read ingredient mappings
 with open(datasetPath / "category_id.txt", "r") as category_id:
     lines = category_id.readlines()[1:]
@@ -52,52 +77,68 @@ with open(datasetPath / "category_id.txt", "r") as category_id:
     for i, line in enumerate(lines, start=1):
         original_name = " ".join(line.strip().split()[1:])
         pos = f"[{i}/{len(lines)}]"
+        print(f"{pos} Processing {original_name}...")
 
-        print(f"{pos} Processed {original_name}...")
         query_name = original_name
-        if fix_queries.get(original_name):
-            query_name = fix_queries[original_name]
-            print(pos, "Replaced:", query_name)
+        if original_name in fdc_overrides:
+            override_id = str(fdc_overrides[original_name])
+            endpoint = "food/" + override_id  # query exact food by id
+            print(pos, "Found override:", override_id)
+        else:
+            if original_name in query_overrides:
+                query_name = query_overrides[
+                    original_name
+                ]  # if more accurate name provided, use that
+                print(pos, "Replaced:", query_name)
+            endpoint = "foods/search"  # search by name
+            params["query"] = query_name
 
-        params["query"] = query_name
-        print('queried:', query_name)
         response = get(
-            url="https://api.nal.usda.gov/fdc/v1/foods/search",
+            url=url + endpoint,
             params=params,
             headers=headers,
             proxies=proxies,
-            verify=False
+            verify=False,
         )
-        if response.status_code == 200:
-            response = response.json()
-            if len(response["foods"]) > 0:
-                stats = {
-                    (n["nutrientName"].lower()): n["value"]
-                    for n in response["foods"][0]["foodNutrients"]
-                }
-                nutrition = pd.concat(
-                    [
-                        nutrition,
-                        pd.DataFrame(
-                            data=[
-                                {
-                                    "Name": original_name,
-                                    "Description": response["foods"][0]['description'],
-                                    "Calories": stats.get("energy"),
-                                    "Fat": stats.get("total lipid (fat)"),
-                                    "Protein": stats.get("protein"),
-                                    "Carbs": stats.get("carbohydrate, by difference"),
-                                    "Fiber": stats.get("fiber, total dietary"),
-                                    "Sodium": stats.get("sodium, na"),
-                                }
-                            ]
-                        ),
-                    ],
-                    ignore_index=True,
-                )
-            else:
-                print(f"{pos} ERROR processing {original_name}({query_name}): none found!")
-        #sleep(0.3)
-print(f"Done, saved {len(nutrition)} out of {len(lines)} nutrients")
+        if response.status_code != 200:
+            print(
+                f"{pos} ERROR processing {original_name}({query_name}): non-success API status code: {response.status_code}"
+            )
+            print(f"{url=}; {endpoint=}; {response=}")
+            exit(1)
+            continue
 
-nutrition.to_csv(ROOT_DIR / "data/nutrition_db.csv")
+        response = response.json()
+
+        food = response
+        valueField = "amount"
+        numberField = "number"
+        if "foods" in endpoint:  # non-id lookup
+            if len(response["foods"]) == 0:
+                print(
+                    f"{pos} ERROR processing {original_name}({query_name}): none found!"
+                )
+                continue
+            food = response["foods"][0]
+            valueField = "value"
+            numberField = "nutrientNumber"
+
+        stats = {n[numberField]: n[valueField] for n in food["foodNutrients"]}
+
+        nutrition.append(
+            {
+                "Name": original_name,
+                "Description": food["description"],
+                "Calories": stats.get("208"),
+                "Fat": stats.get("204"),
+                "Protein": stats.get("203"),
+                "Carbs": stats.get("205"),
+                "Fiber": stats.get("291"),
+                "Sodium": stats.get("307"),
+            }
+        )
+
+df = pd.DataFrame(nutrition)
+df.to_csv(ROOT_DIR / "data/nutrition_db.csv")
+
+print(f"Done, saved {len(nutrition)} out of {len(lines)} nutrients")
